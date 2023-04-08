@@ -1,0 +1,163 @@
+.app {
+  display: flex;
+  justify-content: center;
+}
+.app .container {
+  width: 1024px;
+}
+.app .container .link {
+  text-decoration: none;
+  color: gray;
+  font-weight: 500;
+}
+.app .container .auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+.app .container .auth h1 {
+  color: teal;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.app .container .auth form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 200px;
+  background-color: aliceblue;
+  gap: 20px;
+}
+.app .container .auth input {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+.app .container .auth button {
+  padding: 10px;
+  background-color: teal;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.app .container .auth p {
+  text-align: center;
+  color: red;
+}
+.app .container .auth span {
+  font-size: 12px;
+  text-align: center;
+}
+.app .navbar .container {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app .navbar .container .logo img {
+  width: 120px;
+}
+.app .navbar .container .links {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.app .navbar .container .links h6 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.app .navbar .container .links span {
+  cursor: pointer;
+}
+.app .navbar .container .links .write {
+  background-color: #b9e7e7;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  border: 1px solid white;
+}
+.app .navbar .container .links .write:hover {
+  color: teal;
+  background-color: white;
+  border: 1px solid teal;
+}
+.app footer {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #b9e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.app footer img {
+  height: 50px;
+}
+.app .home .posts {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+.app .home .posts .post {
+  display: flex;
+  gap: 100px;
+}
+.app .home .posts .post:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+.app .home .posts .post .img {
+  flex: 2;
+  position: relative;
+}
+.app .home .posts .post .img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #b9e7e7;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  z-index: -1;
+}
+.app .home .posts .post .img img {
+  width: 100%;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app .home .posts .post .content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app .home .posts .post .content h1 {
+  font-size: 48px;
+}
+.app .home .posts .post .content p {
+  font-size: 18px;
+}
+.app .home .posts .post .content button {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid teal;
+  color: teal;
+}
+.app .home .posts .post .content button:hover {
+  border: 1px solid white;
+  background-color: #b9e7e7;
+  color: black;
+}/*# sourceMappingURL=Style.css.map */
